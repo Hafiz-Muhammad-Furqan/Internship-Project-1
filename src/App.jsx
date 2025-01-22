@@ -1,7 +1,8 @@
-import React from "react";
+import Hero from "./Pages/Hero";
+import "remixicon/fonts/remixicon.css";
 
 const App = () => {
-  return <div>App</div>;
+  return <Hero />;
 };
 
 export default App;
