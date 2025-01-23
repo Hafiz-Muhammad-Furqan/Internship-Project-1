@@ -70,7 +70,7 @@ const Navbar = () => {
                 href="#"
                 className="block py-2 md:px-3 text-white rounded text-lg font-bold px-10 md:p-0"
               >
-                About US
+                Internships
               </a>
             </li>
             <li>
@@ -78,7 +78,7 @@ const Navbar = () => {
                 href="#"
                 className="block py-2 md:px-3 text-white rounded text-lg font-bold px-10 md:p-0"
               >
-                Interns Program
+                About Us
               </a>
             </li>
             <li>
@@ -86,7 +86,7 @@ const Navbar = () => {
                 href="#"
                 className="block py-2 md:px-3 text-white rounded text-lg font-bold px-10 md:p-0"
               >
-                Spark
+                Contact
               </a>
             </li>
             <li>
@@ -94,7 +94,7 @@ const Navbar = () => {
                 href="#"
                 className="block py-2 md:px-3 text-white rounded text-lg font-bold px-10 md:p-0"
               >
-                Login
+                Apply Now
               </a>
             </li>
             <li className="absolute flex flex-col items-start gap-2 justify-center bottom-10 md:hidden px-10">
