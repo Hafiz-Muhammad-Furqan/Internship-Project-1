@@ -6,25 +6,17 @@ const Footer = () => {
       <div className="w-full max-w-[1000px] flex flex-col items-center justify-between px-4">
         <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-7 lg:gap-0">
           <div className="w-full flex lg:items-start items-center justify-center flex-col lg:pr-60 gap-4">
-            <a
-              href="https://flowbite.com/"
-              className="flex items-center space-x-3 rtl:space-x-reverse relative z-[5]"
-            >
-              <span className="self-center text-xl text-white font-semibold whitespace-nowrap">
-                interns
-              </span>
-              <img
-                src="/Images/flag-400.png"
-                className="h-4 absolute bottom-0 -right-9 "
-                alt="Flowbite Logo"
-              />
-            </a>
+            <img
+              src="/Images/logo.jpeg"
+              className="h-12 rounded-full cursor-pointer"
+              alt=" Logo"
+            />
             <h1 className="text-white text-2xl font-semibold lg:text-start text-center">
               Enabling Individuals to live meaningful Lives
             </h1>
           </div>
 
-          <div className="flex items-start justify-end lg:gap-x-12 gap-x-6">
+          <div className="flex items-start justify-end lg:gap-x-12 gap-x-6  ">
             <div className="flex flex-col items-start justify-center gap-2">
               <a
                 href="#"

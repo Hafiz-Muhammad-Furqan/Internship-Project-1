@@ -7,18 +7,22 @@ import InternsCommunity from "./Pages/InternsCommunity";
 import Lab from "./Pages/Lab";
 import Footer from "./Pages/Footer";
 import Internships from "./Pages/Internships";
+import Navbar from "./components/Navbar";
+import Contact from "./Pages/Contact";
 
 const App = () => {
   return (
     <>
-      {/* <Hero />
+      <Navbar></Navbar>
+      <Hero />
       <About></About>
       <InternshipProgram></InternshipProgram>
       <ChoosePath></ChoosePath>
+      <Internships></Internships>
       <InternsCommunity></InternsCommunity>
       <Lab></Lab>
-      <Footer></Footer> */}
-      <Internships></Internships>
+      <Contact></Contact>
+      <Footer></Footer>
     </>
   );
 };

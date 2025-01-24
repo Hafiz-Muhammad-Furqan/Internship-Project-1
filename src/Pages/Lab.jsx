@@ -11,7 +11,7 @@ const Lab = () => {
           <p className="lg:text-xl text-lg font-bold text-gray-600 text-center">
             We write about programming, paths and offered programs
           </p>
-          <button className="border w-full lg:w-0 text-xl font-bold flex items-center justify-center gap-3 hover:scale[1.04] cursor-pointer transition-all duration-200 ease-in-out text-[#104820] p-2">
+          <button className="border  text-xl font-bold flex items-center justify-center gap-3 hover:scale[1.04] cursor-pointer transition-all duration-200 ease-in-out text-[#104820] p-2 whitespace-nowrap">
             View More
             <i className="ri-arrow-right-s-line text-black text-3xl"></i>
           </button>
@@ -19,11 +19,7 @@ const Lab = () => {
         <div className="w-full grid grid-cols-1 xl:grid-cols-3 gap-4">
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  transition-all duration-200 ease-in-out cursor-pointer hover:scale-[1.04]">
             <a href="#">
-              <img
-                className="rounded-t-lg"
-                src="/Images/toba-ather.png"
-                alt=""
-              />
+              <img className="rounded-t-lg" src="/Images/avatar.avif" alt="" />
             </a>
             <div className="p-5">
               <p className="px-2 mb-2 text-sm font-semibold rounded-xl bg-green-600 text-white inline-block">
@@ -31,7 +27,7 @@ const Lab = () => {
               </p>
               <a href="#">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
-                  Tuba Ather
+                  ALex Suprun
                 </h5>
               </a>
               <p className="mb-3 font-bold text-gray-700 dark:text-gray-400">

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -7,20 +8,21 @@ const Navbar = () => {
     setToggle(!toggle);
   };
 
+  const pages = [
+    { name: "Home", link: "home" },
+    { name: "Internships", link: "internships" },
+    { name: "About Us", link: "about" },
+    { name: "Contact", link: "contact" },
+  ];
+
   return (
-    <nav className="absolute top-0 w-full  border-gray-500 border-b-2 border-solid py-2 px-2">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a
-          href="https://flowbite.com/"
-          className="flex items-center space-x-3 rtl:space-x-reverse relative z-[5]"
-        >
-          <span className="self-center text-2xl text-white font-semibold whitespace-nowrap">
-            interns
-          </span>
+    <nav className="fixed bg-[#1B2D26] z-10 top-0 w-full border-gray-500 border-b-2 border-solid px-2">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-3">
+        <a className="flex items-center space-x-3 rtl:space-x-reverse relative z-[5]">
           <img
-            src="/Images/flag-400.png"
-            className="h-4 absolute bottom-0 -right-9 "
-            alt="Flowbite Logo"
+            src="/Images/logo.jpeg"
+            className="h-12 rounded-full cursor-pointer "
+            alt="Logo"
           />
         </a>
         <button
@@ -50,49 +52,30 @@ const Navbar = () => {
         </button>
         <div className="w-full md:w-auto" id="navbar-default">
           <ul
-            className={`font-medium flex flex-col p-4 md:p-0   text-white md:flex-row md:space-x-4 rtl:space-x-reverse md:mt-0 ${
+            className={`font-medium flex flex-col p-4 md:p-0   text-white md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 ${
               toggle
                 ? "h-[100dvh] w-full absolute top-0 left-0 bg-black flex items-start justify-center  flex-col"
                 : "hidden md:flex"
             }`}
           >
+            {pages.map((page, index) => (
+              <li key={index}>
+                <Link
+                  to={page.link}
+                  duration={300}
+                  smooth={true}
+                  className="block py-2 md:px-3 text-white px-10 text-base  md:p-0 cursor-pointer"
+                  aria-current="page"
+                  onClick={() => setToggle(false)}
+                >
+                  {page.name}
+                </Link>
+              </li>
+            ))}
             <li>
               <a
                 href="#"
-                className="block py-2 md:px-3 text-white px-10 text-lg font-bold md:p-0"
-                aria-current="page"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 md:px-3 text-white rounded text-lg font-bold px-10 md:p-0"
-              >
-                Internships
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 md:px-3 text-white rounded text-lg font-bold px-10 md:p-0"
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 md:px-3 text-white rounded text-lg font-bold px-10 md:p-0"
-              >
-                Contact
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 md:px-3 text-white rounded text-lg font-bold px-10 md:p-0"
+                className="block py-2 md:px-3 text-white cursor-pointer rounded text-base px-10 md:p-0"
               >
                 Apply Now
               </a>
