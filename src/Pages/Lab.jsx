@@ -16,7 +16,7 @@ const Lab = () => {
             <i className="ri-arrow-right-s-line text-black text-3xl"></i>
           </button>
         </div>
-        <div className="w-full grid grid-cols-1 xl:grid-cols-3 gap-4">
+        <div className="w-full grid grid-cols-1 place-items-center md:grid-cols-3 gap-4">
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  transition-all duration-200 ease-in-out cursor-pointer hover:scale-[1.04]">
             <a href="#">
               <img className="rounded-t-lg" src="/Images/avatar.avif" alt="" />

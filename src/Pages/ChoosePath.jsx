@@ -11,11 +11,11 @@ const ChoosePath = () => {
           87% of people learning for professional development report career
           benefits like getting a promotion, a raise, or starting a new career
         </p>
-        <div className="w-full flex flex-col lg:flex-row items-center justify-between pt-6 px-4 lg:px-0 gap-4 lg:gap-0">
+        <div className="w-full grid place-items-center  grid-cols-1 md:grid-cols-2 pt-6 px-4 lg:px-0 gap-4 lg:gap-0">
           <img
             src="/Images/internsprogram.png"
             alt=""
-            className="lg:h-96 h-full bg-cover border rounded-lg"
+            className="lg:h-96  h-full bg-cover border rounded-lg"
           />
           <div className="w-full flex flex-col items-start justify-start h-full lg:px-16 px-4 gap-3 lg:gap-6">
             <h1 className="text-black text-3xl lg:text-4xl font-bold">
@@ -35,11 +35,11 @@ const ChoosePath = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-col lg:flex-row items-center justify-between pt-6 px-4 lg:px-0 gap-4 lg:gap-0">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 pt-6 place-items-center px-4 lg:px-0 gap-4 lg:gap-0">
           <img
             src="/Images/sparkprogram.png"
             alt=""
-            className="lg:h-96 h-full bg-cover border rounded-lg"
+            className="lg:h-96  object-cover object-center bg-cover border rounded-lg"
           />
           <div className="w-full flex flex-col items-start justify-start h-full lg:px-16 px-4 gap-3 lg:gap-6">
             <h1 className="text-black text-3xl lg:text-4xl font-bold">
